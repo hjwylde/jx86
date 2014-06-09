@@ -179,6 +179,7 @@ public interface Instruction {
 		subsd,   // Scalar double precision floating point
 		mulsd,   // Scalar double precision floating point
 		divsd,   // Scalar double precision floating point
+        movsd,   // Scalar double precision floating point
 		cmp,
 		cmpsb,   // compare byte word
 		cmpsw,   // compare word
