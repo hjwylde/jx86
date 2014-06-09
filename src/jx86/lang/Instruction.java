@@ -304,6 +304,11 @@ public interface Instruction {
 					throw new IllegalArgumentException("immediate operand does not fit into double word");
 				}
 				break;
+            case Quad:
+				if(leftOperand < Long.MIN_VALUE || leftOperand > Long.MAX_VALUE) {
+					throw new IllegalArgumentException("immediate operand does not fit into quad word");
+				}
+				break;
 			default:
 				// this case is always true by construction
 			}
@@ -378,6 +383,11 @@ public interface Instruction {
 					throw new IllegalArgumentException("immediate operand does not fit into double word");
 				}
 				break;
+            case Quad:
+				if(leftOperandImm < Long.MIN_VALUE || leftOperandImm > Long.MAX_VALUE) {
+					throw new IllegalArgumentException("immediate operand does not fit into quad word");
+				}
+				break;
 			default:
 				// this case is always true by construction
 			}
@@ -443,6 +453,11 @@ public interface Instruction {
 			case Long:
 				if(rightOperandImm < Integer.MIN_VALUE || rightOperandImm > Integer.MAX_VALUE) {
 					throw new IllegalArgumentException("immediate operand does not fit into double word");
+				}
+				break;
+            case Quad:
+				if(leftOperandImm < Long.MIN_VALUE || leftOperandImm > Long.MAX_VALUE) {
+					throw new IllegalArgumentException("immediate operand does not fit into quad word");
 				}
 				break;
 			default:
