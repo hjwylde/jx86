@@ -324,7 +324,7 @@ public interface Instruction {
 	}	
 	
 	public enum ImmIndRegOp {
-		mov				
+		mov, movsd				
 	}
 	
 	/**
@@ -405,7 +405,7 @@ public interface Instruction {
 
 	
 	public enum RegImmIndOp {
-		mov				
+		mov, movsd
 	}
 	
 	/**
@@ -456,7 +456,7 @@ public interface Instruction {
 				}
 				break;
             case Quad:
-				if(leftOperandImm < Long.MIN_VALUE || leftOperandImm > Long.MAX_VALUE) {
+				if(rightOperandImm < Long.MIN_VALUE || rightOperandImm > Long.MAX_VALUE) {
 					throw new IllegalArgumentException("immediate operand does not fit into quad word");
 				}
 				break;

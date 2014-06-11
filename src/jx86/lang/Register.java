@@ -191,7 +191,7 @@ public class Register {
 	public static final Register[] XMM_FAMILY = {
 		Register.XMM0,Register.XMM1,Register.XMM2,Register.XMM3,
 		Register.XMM4,Register.XMM5,Register.XMM6,Register.XMM7,
-		Register.XMM8,Register.XMM9,Register.XMM7,Register.XMM8,
+		Register.XMM8,Register.XMM9,Register.XMM10,Register.XMM11,
 		Register.XMM12,Register.XMM13,Register.XMM14,Register.XMM15,
 	};
 	
